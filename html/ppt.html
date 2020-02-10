@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Piedra, papel o tijeras</title>
+    <link type="text/css" rel="stylesheet" href="css/ppt.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script src='/socket.io/socket.io.js'></script>
+
+    <script src="js/ppt.js"></script>
+ 
+</head>
+
+
+    <h1>¡Piedra, papel o tijera!</h1>
+
+    <div class="jugador contrario">
+
+        <div class="tercio" >
+            <div class="imagenes">
+                <div class="par">
+                    <img class="alegre" src="imagenes/alegre.png">
+                    <img class="triste" src="imagenes/triste.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="tercio">
+            <div style="height:100px;"><button id="rival">Vas a perder hijoputa</button></div>
+        </div>
+        
+        <div class="tercio">
+            <p id="contrario">Contrincante:<br>
+                <span id="nom_cont"> ? </span>
+                (<span id="sus_puntos">0</span>)
+            </p>
+        </div>
+
+    </div>
+
+
+    <div class="jugador yo">
+
+        <div class="tercio" >
+            <div class="imagenes">
+                <div class="par">
+                    <img class="alegre" src="imagenes/alegre.png">
+                    <img class="triste" src="imagenes/triste.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="tercio">
+            <div style="height:100px;"><button id="pulsador">Pulsame, reventemos a ese hijoputa </button></div>
+        </div>
+        
+        <div class="tercio">
+            <p id="yo">Yo:<br>
+                <span id="mi_nombre">?</span>
+                (<span id="mis_puntos">0</span>)
+            </p>
+        </div>
+
+    </div>
+
+
+    <div style="height:100px;"><button id="otra_vez">Jugar otra vez</button></div>
+    
+</body>
+</html>

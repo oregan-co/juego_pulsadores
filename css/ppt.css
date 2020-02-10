@@ -1,0 +1,86 @@
+
+
+html {
+    min-width: 700px;
+}
+
+h1 {
+    font-size: 48pt;
+    text-align: center;
+}
+
+div.tercio{
+    display: inline-block;
+    width:33%;
+    text-align: center;
+}
+
+
+img.traslucido {
+    opacity: .5;
+}
+
+
+img.seleccionado {
+    border: black solid 3px;
+}
+
+div.jugador{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#otra_vez{
+
+    display:block;
+    margin:auto;
+    margin-top: 30px;
+}
+
+div.imagenes {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+div.tercio:first-child div.imagenes {
+    justify-content: center;
+}
+
+
+div.tercio > p {
+    text-align:center;
+}
+
+
+div.imagenes img{
+     height: 100px;
+}
+
+
+
+/* Una imagen sobre otra del par */
+div.par img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div.par {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+#contrario, #yo {
+    font-size: 28pt;
+}
+
+#mi_nombre, #nom_cont{
+    font-weight: bold;
+}
